@@ -1,4 +1,4 @@
 @Library('roboshop') _
 
-env.COMPONENT = "payment"
+env.COMPONENT="payment"
 python()
