@@ -1,7 +1,7 @@
-#appPort: 8080
-#appName: payment
-#externalSecrets:
-#  enabled: false
+appPort: 8080
+appName: payment
+externalSecrets:
+  enabled: true
 #resources:
 #  limits:
 #    cpu: 1000m
