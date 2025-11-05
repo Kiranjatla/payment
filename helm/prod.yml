@@ -2,26 +2,12 @@ appPort: 8080
 appName: payment
 externalSecrets:
   enabled: true
-#resources:
-#  limits:
-#    cpu: 1000m
-#    memory: 1024Mi
-#  requests:
-#    cpu: 800m
-#    memory: 800Mi
-java:
-  xmx: "750m"
-
-# *** CRITICAL FIX: This section overrides application defaults ***
-extraEnv:
-  - name: CART_HOST
-    value: cart-roboshop
-  - name: USER_HOST
-    value: user-roboshop
-  - name: PAYMENT_GATEWAY
-    # The fix for the 429 error: point to the internal service name
-    value: http://payment-roboshop:8080/payment
-  - name: LANG
-    value: C.UTF-8
-  - name: LC_ALL
-    value: C.UTF-8
+resources:
+  limits:
+    cpu: 1000m
+    memory: 1024Mi
+  requests:
+    cpu: 800m
+    memory: 800Mi
+#java:
+#  xmx: "750m"
